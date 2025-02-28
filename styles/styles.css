@@ -1,0 +1,267 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 15px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #0056b3;
+}
+
+/* Section Styling */
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Projects Styling */
+.project {
+  background: #f1f1f1;
+  padding: 20px;
+  margin-top: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.project:hover {
+  background: #e0e7ff;
+}
+
+/* Skills */
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  background: #e3e6ea;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  background: #f1f1f1;
+}
+
+/* Keyframe Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+.dark-mode header {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode section {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode .project {
+  background: #292929;
+  border-left: 5px solid #4a90e2;
+}
+
+.dark-mode button {
+  background: #4a90e2;
+}
+
+.dark-mode button:hover {
+  background: #357abd;
+}
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f8f9fa;
+}
+
+/* Ensure all text is white */
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode p,
+.dark-mode a,
+.dark-mode label {
+  color: #ffffff;
+}
+
+/* Update Header */
+.dark-mode header {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Update Sections */
+.dark-mode section {
+  background: #1e1e1e;
+  color: white;
+}
+
+/* Update Project Cards */
+.dark-mode .project {
+  background: #292929;
+  border-left: 5px solid #4a90e2;
+}
+
+/* Update Buttons */
+.dark-mode button {
+  background: #4a90e2;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background: #357abd;
+}
+
+/* Update Form Inputs */
+.dark-mode input,
+.dark-mode textarea {
+  background: #222;
+  color: white;
+  border: 1px solid #555;
+}
+
+/* Update Links */
+.dark-mode a {
+  color: #4a90e2;
+}
+
+.dark-mode a:hover {
+  color: #66a3ff;
+}
+/* Skill Badges */
+ul li {
+  display: inline-block;
+  background: #e3e6ea;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Dark Mode Fix for Skill Badges */
+.dark-mode ul li {
+  background: #333; /* Darker background for contrast */
+  color: #ffffff; /* White text for readability */
+  border: 1px solid #666; /* Optional subtle border */
+}
